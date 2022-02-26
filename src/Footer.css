@@ -1,10 +1,11 @@
 .Author {
     /* BOX MODEL */
-    margin-inline: auto;
+    margin-top: auto;
     border-top: 2px solid white;
     /* OTHER */
     color: white;
-    font-size: 30px;
+    font-size: 14px;
+    font-style: italic;
 }
 
 .Author a {
@@ -12,6 +13,7 @@
     color: inherit;
     font-size: inherit;
     font-family: inherit;
+    font-style: inherit;
     text-decoration: none;
 }
 

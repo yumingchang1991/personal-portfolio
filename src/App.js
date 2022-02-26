@@ -11,7 +11,6 @@ function App() {
         <a className="App-link" href="https://www.linkedin.com/in/yumingchang1991/" rel="noreferrer" target="_blank">LinkedIn</a>
         <Footer />
       </header>
-      
     </div>
   );
 }

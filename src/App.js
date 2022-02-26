@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <p>in the meantime, you could reach me on</p>
         <a className="App-link" href="https://www.linkedin.com/in/yumingchang1991/" rel="noreferrer" target="_blank">LinkedIn</a>
       </header>
+      <Footer />
     </div>
   );
 }

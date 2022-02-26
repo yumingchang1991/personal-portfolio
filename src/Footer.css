@@ -1,0 +1,20 @@
+footer {
+    /* BOX MODEL */
+    margin-inline: auto;
+    border-top: 2px solid white;
+    /* OTHER */
+    color: white;
+    font-size: 30px;
+}
+
+a {
+    /* OTHER */
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: tomato;
+}

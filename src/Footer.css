@@ -7,7 +7,7 @@ footer {
     font-size: 30px;
 }
 
-.Author {
+.Author a {
     /* OTHER */
     color: inherit;
     font-size: inherit;
@@ -15,6 +15,6 @@ footer {
     text-decoration: none;
 }
 
-.Author:hover {
+.Author a:hover {
     color: tomato;
 }

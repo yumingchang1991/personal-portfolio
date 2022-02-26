@@ -9,8 +9,9 @@ function App() {
         <p><i>give me a couple of weeks ...</i></p>
         <p>in the meantime, you could reach me on</p>
         <a className="App-link" href="https://www.linkedin.com/in/yumingchang1991/" rel="noreferrer" target="_blank">LinkedIn</a>
+        <Footer />
       </header>
-      <Footer />
+      
     </div>
   );
 }

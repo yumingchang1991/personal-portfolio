@@ -1,8 +1,13 @@
+
+
 .App {
   text-align: center;
+  height: 100vh;
 }
 
-.App-header {
+
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -21,4 +26,4 @@
   font-size: 40px;
   font-weight: bold;
   transition-duration: 0.3s;
-}
+} */

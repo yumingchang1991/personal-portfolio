@@ -1,0 +1,21 @@
+.landing-content {
+    /* Box Model */
+    height: 100%;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-title {
+    font-size: 64px;
+}
+
+.landing-body {
+    font-size: 18px;
+}
+
+.swipe-down-icon {
+    margin-top: 1em;
+}

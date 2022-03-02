@@ -1,4 +1,5 @@
 import './Navigation.css'
+import {NavLink, HashRouter} from "react-router-dom";
 
 function Navigation() {
     return (
@@ -10,19 +11,14 @@ function Navigation() {
             <div className="navigation-list-container">
                 <ul className="navigation-list">
                     <li className="navigation-item">
-                        <span>
+                        <NavLink to="/who">
                             Who
-                        </span>
+                        </NavLink>
                     </li>
                     <li className="navigation-item">
-                        <span>
+                        <NavLink to="/what">
                             What
-                        </span>
-                    </li>
-                    <li className="navigation-item">
-                        <span>
-                            Contact
-                        </span>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

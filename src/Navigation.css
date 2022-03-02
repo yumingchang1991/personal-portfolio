@@ -37,11 +37,11 @@ a {
 
 @media (max-width: 360px) {
     .brand-name {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .navigation-item {
-        font-size: 14px;
+        font-size: 24px;
     }
 }
 

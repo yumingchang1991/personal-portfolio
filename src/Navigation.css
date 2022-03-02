@@ -1,7 +1,6 @@
 a {
     text-decoration: none;
     color: inherit;
-    font-weight: bold;
 }
 
 .sticky-navigation {
@@ -26,7 +25,7 @@ a {
 .navigation-list {
     /* Layout */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 2em
 }
 
@@ -34,6 +33,11 @@ a {
     list-style: none;
 }
 
+/* CLASS "active" is automatically assigned by React Router when that link is clicked */
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 @media (max-width: 360px) {
     .brand-name {

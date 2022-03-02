@@ -1,5 +1,5 @@
 import './Navigation.css'
-import {NavLink, HashRouter} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Navigation() {
     return (

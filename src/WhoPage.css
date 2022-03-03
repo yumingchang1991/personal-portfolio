@@ -19,7 +19,7 @@
 
     /* Box Model */
     margin-inline: auto;
-    padding-top: 1em;
+    padding-block: 1em;
     border-bottom: 2px dotted #E7EBEC;
 
     /* other */

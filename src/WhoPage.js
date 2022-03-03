@@ -4,7 +4,7 @@ function WhoPage() {
     return (
         <div className="who-content">
             <div className="avatar-container">
-                <img className="avatar" src="https://github.com/yumingchang1991/personal-portfolio/blob/gh-pages/Avatar.png" width="188px" height="194px" alt="this is avatar"></img>
+                <img className="avatar" src="./Avatar.png" width="188px" height="194px" alt="this is avatar"></img>
             </div>
             <section className="intro">
                 <p className="author">

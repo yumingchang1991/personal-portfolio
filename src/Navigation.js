@@ -24,10 +24,10 @@ export default function Navigation() {
     )
 }
 
-function SiteLogo() {
+export function SiteLogo() {
     return (
         <a className='site-logo' href="https://yumingchang1991.github.io/personal-portfolio/">
-                <span className='site-logo-text'>YC</span>
+            <span className='site-logo-text'>YC</span>
         </a>
     )
 }

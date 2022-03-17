@@ -5,7 +5,7 @@ function Navigation() {
     return (
         <nav className="sticky-navigation">
             <a href="https://yumingchang1991.github.io/personal-portfolio/" className="brand-name">
-                <img className="site-logo" src="./favicon/favicon-32x32.png" alt="this is site-logo"></img>
+                <img className="site-logo" src="./favicon/favicon.ico" alt="this is site-logo"></img>
             </a>
             
             <div className="navigation-list-container">

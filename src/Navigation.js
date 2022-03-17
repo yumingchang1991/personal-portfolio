@@ -1,12 +1,10 @@
 import './Navigation.css'
 import {NavLink} from "react-router-dom";
 
-function Navigation() {
+export default function Navigation() {
     return (
         <nav className="sticky-navigation">
-            <a href="https://yumingchang1991.github.io/personal-portfolio/" className="brand-name">
-                <img className="site-logo" src="./favicon/favicon.ico" alt="this is site-logo"></img>
-            </a>
+            <SiteLogo />
             
             <div className="navigation-list-container">
                 <ul className="navigation-list">
@@ -26,4 +24,10 @@ function Navigation() {
     )
 }
 
-export default Navigation
+function SiteLogo() {
+    return (
+        <a className='site-logo' href="https://yumingchang1991.github.io/personal-portfolio/">
+                <span className='site-logo-text'>YC</span>
+        </a>
+    )
+}

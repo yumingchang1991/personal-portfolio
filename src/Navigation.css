@@ -22,6 +22,21 @@ a {
     background: #E6E6E6;
 }
 
+.site-logo {
+    outline: 4px solid #252525;
+    border-radius: 5px;
+    padding: 0.1rem 0.4rem;
+
+    /* Font */
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.site-logo:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
 .navigation-list {
     /* Layout */
     display: flex;

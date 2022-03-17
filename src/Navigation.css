@@ -10,7 +10,7 @@ a {
     left: 0;
 
     /* Box Model */
-    padding: 1em;
+    padding: 1rem;
     min-width: 100vw;
 
     /* Layout */
@@ -26,11 +26,15 @@ a {
     /* Layout */
     display: flex;
     justify-content: space-around;
-    gap: 2em
+    gap: 2rem
 }
 
 .navigation-item {
     list-style: none;
+}
+
+.navigation-item:hover {
+    font-weight: bold;
 }
 
 /* CLASS "active" is automatically assigned by React Router when that link is clicked */
@@ -40,12 +44,15 @@ a {
 }
 
 @media (max-width: 360px) {
-    .brand-name {
-        font-size: 24px;
-    }
-
+    .brand-name,
     .navigation-item {
-        font-size: 24px;
+        font-size: 1rem;
     }
 }
 
+@media (min-width: 976px) {
+    .brand-name,
+    .navigation-item {
+        font-size: 2rem;
+    }
+}

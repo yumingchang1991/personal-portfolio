@@ -44,14 +44,12 @@ a {
 }
 
 @media (max-width: 360px) {
-    .brand-name,
     .navigation-item {
         font-size: 1rem;
     }
 }
 
 @media (min-width: 976px) {
-    .brand-name,
     .navigation-item {
         font-size: 2rem;
     }

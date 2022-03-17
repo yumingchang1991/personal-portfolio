@@ -4,7 +4,9 @@ import {NavLink} from "react-router-dom";
 export default function Navigation() {
     return (
         <nav className="sticky-navigation">
-            <SiteLogo />
+            <a className='site-logo' href="https://yumingchang1991.github.io/personal-portfolio/">
+                <span className='site-logo-text'>YC</span>
+            </a>
             
             <div className="navigation-list-container">
                 <ul className="navigation-list">
@@ -21,13 +23,5 @@ export default function Navigation() {
                 </ul>
             </div>
         </nav>
-    )
-}
-
-export function SiteLogo() {
-    return (
-        <a className='site-logo' href="https://yumingchang1991.github.io/personal-portfolio/">
-            <span className='site-logo-text'>YC</span>
-        </a>
     )
 }

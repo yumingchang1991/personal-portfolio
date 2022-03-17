@@ -26,13 +26,24 @@
     font-size: 24px;
 }
 
+.social-media-links {
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.link-item {
+    list-style: none;
+}
+
 .intro {
     /* Layout */
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* other */
-    line-height: 3rem;
+    line-height: 2.5rem;
     font-size: 1.2rem;
 }
 

@@ -4,7 +4,7 @@ export default function WhoPage() {
     return (
         <div className="who-content">
             <div className="avatar-container">
-                <img className="avatar" src="./Avatar.png" width="188px" height="196px" alt="this is avatar"></img>
+                <img className="avatar-img" src="./Avatar.png" width="188px" height="196px" alt="this is avatar"></img>
             </div>
             <div className='links-container'>
                 <ul className='social-media-links'>

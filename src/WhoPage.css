@@ -21,10 +21,9 @@
     margin-inline: auto;
     padding-block: 1rem;
     border-bottom: 2px dotted #E7EBEC;
-
-    /* other */
-    font-size: 24px;
 }
+
+
 
 .social-media-links {
     /* Layout */
@@ -35,6 +34,10 @@
 
 .link-item {
     list-style: none;
+}
+
+.link i:hover {
+    color: #E63333;
 }
 
 .intro {
@@ -55,4 +58,18 @@ author {
 .intro-summary {
     line-height: 1.8rem;
     font-size: 1.2rem;
+}
+
+@media (max-width: 360px) {
+    .avartar-img {
+        max-width: 210px;
+        height: auto;
+    }
+}
+
+@media (max-width: 976px) {
+    .avartar-img {
+        max-width: 100%;
+        height: 196px;
+    }
 }

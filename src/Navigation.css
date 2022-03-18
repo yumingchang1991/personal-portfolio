@@ -12,6 +12,7 @@ a {
     /* Box Model */
     padding: 1rem;
     min-width: 100vw;
+    height: 90px;
 
     /* Layout */
     display: flex;
@@ -29,7 +30,7 @@ a {
 
     /* Font */
     font-size: 1.8rem;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .site-logo:hover {
@@ -58,7 +59,7 @@ a {
     text-decoration: underline;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) {
     .navigation-item span {
         font-size: 2rem;
     }

@@ -60,7 +60,7 @@ a {
 
 @media (max-width: 360px) {
     .navigation-item {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 

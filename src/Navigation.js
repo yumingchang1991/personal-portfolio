@@ -12,16 +12,23 @@ export default function Navigation() {
                 <ul className="navigation-list">
                     <li className="navigation-item">
                         <NavLink to="/who">
-                            Who
+                            <span>Who</span>
                         </NavLink>
                     </li>
-                    <li className="navigation-item">
+                    <li className="navigation-item" onClick={openSideMenu}>
                         <NavLink to="/what">
-                            What
+                            <span>What</span>
                         </NavLink>
                     </li>
                 </ul>
             </div>
         </nav>
     )
+}
+
+function openSideMenu(e) {
+    const SideMenu = document.querySelector('.project-side-menu-root')
+    e.stopPropagation()
+    SideMenu.style.visibility = 'visible'
+    console.log('user click/touch to open project side menu')
 }

@@ -1,5 +1,6 @@
 .project-side-menu-root {
   /* Layout */
+  visibility: hidden;
   position: absolute;
   top: 0px;
   left: 0px;

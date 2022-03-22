@@ -16,9 +16,7 @@ export default function Navigation() {
                         </NavLink>
                     </li>
                     <li className="navigation-item" onClick={openSideMenu}>
-                        <NavLink to="/what">
-                            <span>What</span>
-                        </NavLink>
+                        <span>Projects</span>
                     </li>
                 </ul>
             </div>

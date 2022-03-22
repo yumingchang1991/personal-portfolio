@@ -49,8 +49,9 @@ a {
     list-style: none;
 }
 
-.navigation-item:hover {
-    font-weight: bold;
+.navigation-item *:hover {
+    cursor: pointer;
+    color: #E63333;
 }
 
 /* CLASS "active" is automatically assigned by React Router when that link is clicked */

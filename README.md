@@ -1,5 +1,5 @@
 ## Project Name
-Personal Portfolio
+![Personal Portfolio](https://yumingchang1991.github.io/personal-portfolio/)
 
 ## Description
 This portal integrates all my web projects into a React sinlge page application.

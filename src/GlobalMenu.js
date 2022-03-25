@@ -24,5 +24,5 @@ export default function GlobalMenu() {
 }
 
 function handleDrawerOpen() {
-
+  // add drawer component
 }

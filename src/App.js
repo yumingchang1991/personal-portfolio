@@ -12,8 +12,9 @@ function App() {
   return (
     <HashRouter>
       {/* <Navigation /> */}
-      <NavBar />
+      
       <div className="App">
+        <NavBar />
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route path="/who" element={<WhoPage />} />

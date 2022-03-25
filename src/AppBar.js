@@ -7,6 +7,7 @@ import Toolbar from '@mui/material/Toolbar';
 import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
 
 import SiteLogoText from './SiteLogoText';
+import GlobalMenu from './GlobalMenu';
 
 export default function NavBar() {
   return (
@@ -14,11 +15,13 @@ export default function NavBar() {
         <AppBar position='sticky'>
           <Toolbar
             sx={{
+              justifyContent: 'space-between',
               width: '100vw',
               padding: '1rem',
               backgroundColor: '#E6E6E6'
               }}>
             <SiteLogoText />
+            <GlobalMenu />
           </Toolbar>
         </AppBar>
     </ScopedCssBaseline>

@@ -1,9 +1,14 @@
 import './SiteLogoText.css'
+import {NavLink} from 'react-router-dom'
 
 export default function SiteLogoText() {
   return (
-    <a className='site-logo' href="https://yumingchang1991.github.io/personal-portfolio/">
-      <span className='site-logo-text'>YC</span>
-    </a>
+    <>
+        <NavLink to='./'>
+          <div className='site-logo'>
+            <span className='site-logo-text'>YC</span>
+          </div>
+        </NavLink>
+    </>
   )
 }

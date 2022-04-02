@@ -1,8 +1,8 @@
-import './WhoPage.css'
+import './AboutMe.css'
 
-export default function WhoPage() {
+export default function AboutMe() {
     return (
-        <div className="who-content">
+        <div className="about-me-content">
             <div className="avatar-container">
                 <img className="avatar-img" src="./Avatar.png" width="188px" height="196px" alt="this is avatar"></img>
             </div>

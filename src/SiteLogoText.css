@@ -1,10 +1,17 @@
+a {
+    text-decoration: none;
+}
+
+.active {
+    background: #E6E6E6;
+}
+
 .site-logo {
     outline: 4px solid #252525;
     border-radius: 5px;
     padding: 0.1rem 0.4rem;
 
     /* Font */
-    text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
 }

@@ -1,0 +1,6 @@
+.projects-content {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

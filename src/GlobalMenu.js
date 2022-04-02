@@ -7,7 +7,7 @@ export default function GlobalMenu() {
   return (
     <React.Fragment>
       <IconButton
-        // aria-label="open drawer"
+        aria-label="open drawer"
         edge="end"
         onClick={handleDrawerOpen}
         // sx={{ ...(open && { display: 'none' }) }}

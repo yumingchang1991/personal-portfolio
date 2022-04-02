@@ -4,3 +4,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.projects-content p {
+  font-size: 2rem;
+}
+
+.projects-content h1 {
+  font-size: 6rem;
+}

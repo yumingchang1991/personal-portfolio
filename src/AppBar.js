@@ -12,7 +12,7 @@ import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
 // import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-// import Typography from '@mui/material/Typography';
+import Typography from '@mui/material/Typography';
 // import CssBaseline from '@mui/material/CssBaseline';
 
 /**
@@ -87,7 +87,7 @@ export default function NavBar() {
         onOpen={handleDrawerOpen}
       >
         <IconButton onClick={handleDrawerClose}>
-         <ChevronRightIcon />
+         <ChevronRightIcon fontSize='large'/>
         </IconButton>
         <Divider />
         <nav aria-label='main navigation menu'>
@@ -95,21 +95,33 @@ export default function NavBar() {
             <ListItem onClick={handleDrawerClose}>
               <NavLink to='/about-me'>
                 <ListItemButton>
-                  <ListItemText primary='About Me' />
+                  <ListItemText>
+                    <Typography fontSize={'2rem'}>
+                      About Me
+                    </Typography>
+                  </ListItemText>
                 </ListItemButton>
               </NavLink>
             </ListItem>
             <ListItem onClick={handleDrawerClose}>
               <NavLink to='/backend-projects'>
                 <ListItemButton>
-                  <ListItemText primary='Backend Projects' />
+                  <ListItemText>
+                    <Typography fontSize={'2rem'}>
+                      Backend Projects
+                    </Typography>
+                  </ListItemText>
                 </ListItemButton>
               </NavLink>
             </ListItem>
             <ListItem onClick={handleDrawerClose}>
               <NavLink to='/frontend-projects'>
                 <ListItemButton>
-                  <ListItemText primary='Frontend Projects' />
+                  <ListItemText>
+                    <Typography fontSize={'2rem'}>
+                      Frontend Projects
+                    </Typography>
+                  </ListItemText>
                 </ListItemButton>
               </NavLink>
             </ListItem>

@@ -7,10 +7,10 @@ export default function About() {
   return (
     <div className={styles['about-me-content']}>
       <Head>
-        <script src="https://kit.fontawesome.com/c421560752.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c421560752.js" crossOrigin="anonymous"></script>
       </Head>
       <div className={styles['avatar-container']}>
-        <Image className={styles['avatar-img']} src={profilePic} alt="picture of Yu-Ming"></Image>
+        <Image src={profilePic} alt="picture of Yu-Ming"></Image>
       </div>
       <div className={styles['links-container']}>
         <ul className={styles['social-media-links']}>

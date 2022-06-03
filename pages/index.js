@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Hi, </h1>
-        <h1>I'm Yu-Ming</h1>
+        <h1>I'm <span className={styles['developer-name']}>Yu-Ming</span></h1>
         <h1>A JavaScript developer in Taiwan</h1>
       </main>
     </div>

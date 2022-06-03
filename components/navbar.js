@@ -25,8 +25,11 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
-// basic link
-import Link from '@mui/material/Link';
+// basic link from MUI
+// import Link from '@mui/material/Link';
+
+// Next Link
+import Link from 'next/link'
 
 /**
  * Main Function
@@ -46,11 +49,11 @@ export default function NavBar() {
     padding: '1rem',
   }
   const drawerCSS = {
-    // width: '240px',
     flexshrink: 0,
-    // '& .MuiDrawer-paper': {
-    //   width: '240px',
-    // }
+  }
+
+  const listItemCSS = {
+    fontSize: '1.5rem'
   }
 
   return (
@@ -84,43 +87,45 @@ export default function NavBar() {
         onOpen={handleDrawerOpen}
       >
         <IconButton onClick={handleDrawerClose}>
-          <ChevronRightIcon fontSize='large' sx={{ color: "#252525" }}/>
+          <ChevronRightIcon fontSize='large' sx={{ color: "#252525" }} />
         </IconButton>
         <Divider />
         <nav aria-label='main navigation menu'>
           <List>
             <ListItem onClick={handleDrawerClose}>
-
-              <ListItemButton>
-                <ListItemText>
-                  <Typography fontSize={'1.5rem'}>
-                    About Me
-                  </Typography>
-                </ListItemText>
-              </ListItemButton>
-
+              <Link href='/about'>
+                <ListItemButton>
+                  <ListItemText>
+                    <Typography sx={listItemCSS}>
+                      About Me
+                    </Typography>
+                  </ListItemText>
+                </ListItemButton>
+              </Link>
+            </ListItem>
+            <ListItem onClick={handleDrawerClose}>
+              <Link href='/projects'>
+                <ListItemButton>
+                  <ListItemText>
+                    <Typography sx={listItemCSS}>
+                      Backend Projects
+                    </Typography>
+                  </ListItemText>
+                </ListItemButton>
+              </Link>
             </ListItem>
             <ListItem onClick={handleDrawerClose}>
 
-              <ListItemButton>
-                <ListItemText>
-                  <Typography fontSize={'1.5rem'}>
-                    Backend Projects
-                  </Typography>
-                </ListItemText>
-              </ListItemButton>
-
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-
             </ListItem>
             <ListItem onClick={handleDrawerClose}>
               <ListItemButton>
-                <ListItemText>
-                  <Link href={'https://yumingchang1991.github.io/JavaScript30/'} color={'inherit'} underline={'none'} fontSize={'1.5rem'}>
-                    JS30 Challenge
-                  </Link>
-                </ListItemText>
+                <a href={'https://yumingchang1991.github.io/JavaScript30/'} target='_blank'>
+                  <ListItemText>
+                    <Typography sx={listItemCSS}>
+                      JS30 Challenge
+                    </Typography>
+                  </ListItemText>
+                </a>
               </ListItemButton>
             </ListItem>
           </List>

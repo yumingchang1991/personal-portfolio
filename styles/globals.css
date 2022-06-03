@@ -3,13 +3,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: Calibri, Roboto, Oxygen;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   /* background: #e6e6e6; */
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 a {
@@ -19,4 +20,5 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
 }

@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import profilePic from '../public/Avatar.png'
 import styles from '../styles/About.module.css'
 
 export default function About() {
@@ -8,7 +10,7 @@ export default function About() {
         <script src="https://kit.fontawesome.com/c421560752.js" crossorigin="anonymous"></script>
       </Head>
       <div className={styles['avatar-container']}>
-        <img className={styles['avatar-img']} src="Avatar.png" width="188px" height="196px" alt="this is avatar"></img>
+        <Image className={styles['avatar-img']} src={profilePic} alt="picture of Yu-Ming"></Image>
       </div>
       <div className={styles['links-container']}>
         <ul className={styles['social-media-links']}>

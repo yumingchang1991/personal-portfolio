@@ -8,7 +8,7 @@ export default function About() {
         <script src="https://kit.fontawesome.com/c421560752.js" crossorigin="anonymous"></script>
       </Head>
       <div className={styles['avatar-container']}>
-        <img className={styles['avatar-img']} src="./Avatar.png" width="188px" height="196px" alt="this is avatar"></img>
+        <img className={styles['avatar-img']} src="Avatar.png" width="188px" height="196px" alt="this is avatar"></img>
       </div>
       <div className={styles['links-container']}>
         <ul className={styles['social-media-links']}>

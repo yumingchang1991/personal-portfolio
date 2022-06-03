@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import profilePic from '../public/Avatar.png'
 import styles from '../styles/About.module.css'
 

@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --watch"
   },
   "dependencies": {
     "@emotion/cache": "^11.7.1",
@@ -17,11 +18,15 @@
     "@fontsource/roboto": "^4.5.7",
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6"
   }

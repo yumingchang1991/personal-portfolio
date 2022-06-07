@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "start http://localhost:3000/ && next dev",
+    "dev": "start http://localhost:3000/personal-portfolio && next dev",
     "build": "next build",
     "export": "next export",
     "start": "next start",

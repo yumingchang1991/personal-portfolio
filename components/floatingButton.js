@@ -1,7 +1,19 @@
+import { useState, useEffect } from 'react';
 import IconButton from '@mui/material/IconButton';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 export default function FloatingButton() {
+  const [ showButton, setShowButton ] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setShowButton(true)
+      } else {
+        setShowButton(false)
+      }
+    })
+  }, [])
+
   const style = {
     position: 'fixed',
     bottom: '16px',
@@ -10,14 +22,18 @@ export default function FloatingButton() {
 
   return (
     <>
-      <IconButton onClick={scrollToTop}  sx={style}>
+      {showButton && (
+      <IconButton onClick={scrollToTop} sx={style}>
         <KeyboardArrowUpIcon size='large' />
       </IconButton>
+      )}
     </>
   )
 }
 
 function scrollToTop(e) {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
 }

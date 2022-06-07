@@ -58,7 +58,7 @@ export default function NavBar() {
 
   return (
     <>
-      <AppBar position='sticky' open={open}>
+      <AppBar position='fixed' open={open}>
         <Toolbar
           sx={toolBarCSS}>
 
@@ -79,6 +79,8 @@ export default function NavBar() {
           </IconButton>
         </Toolbar>
       </AppBar>
+      <Toolbar />
+      <Toolbar />
       <SwipeableDrawer
         open={open}
         sx={drawerCSS}

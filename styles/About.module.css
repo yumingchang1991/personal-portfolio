@@ -2,7 +2,7 @@
   /* Layout */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -15,7 +15,7 @@
   /* Box Model */
   margin-inline: auto;
   padding-block: 1rem;
-  border-bottom: 2px dotted #E7EBEC;
+  /* border-bottom: 2px dotted #E7EBEC; */
 }
 
 .social-media-links {
@@ -49,6 +49,20 @@
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Gloria Hallelujah";
+  line-height: 1.4rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem
+}
+
+.taiwan-flag {
+  display: inline;
+  width: 30px;
+  height: auto;
 }
 
 .intro-summary {

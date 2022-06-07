@@ -17,14 +17,22 @@ export default function FloatingButton() {
   const style = {
     position: 'fixed',
     bottom: '16px',
-    right: '16px'
+    right: '16px',
+    opacity: 0.8,
+    backgroundColor: '#252525',
+    color: '#e6e6e6',
+    transition: '0.3s opacity linear',
+    "&:hover": {
+      opacity: 1,
+      backgroundColor: '#252525',
+    }
   }
 
   return (
     <>
       {showButton && (
       <IconButton onClick={scrollToTop} sx={style}>
-        <KeyboardArrowUpIcon size='large' />
+        <KeyboardArrowUpIcon fontSize='large' />
       </IconButton>
       )}
     </>

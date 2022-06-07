@@ -25,9 +25,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
-// basic link from MUI
-// import Link from '@mui/material/Link';
-
 // Next Link
 import Link from 'next/link'
 
@@ -110,7 +107,7 @@ export default function NavBar() {
                 <ListItemButton>
                   <ListItemText>
                     <Typography sx={listItemCSS}>
-                      Backend Projects
+                      Projects
                     </Typography>
                   </ListItemText>
                 </ListItemButton>

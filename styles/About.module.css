@@ -69,6 +69,11 @@
   font-size: 1.2rem;
 }
 
+.attribution {
+  font-size: 0.6rem;
+  color: #363636;
+}
+
 @media (max-width: 800px) {
   .avartar-img {
     max-width: 210px;

@@ -76,7 +76,9 @@ export default function About() {
       </div>
       <SectionDivider displayText={sectionText.ATTRIBUTION}></SectionDivider>
       <small>
-        <a href="https://www.flaticon.com/free-icons/taiwan" title="taiwan icons">Taiwan icons created by Freepik - Flaticon</a>
+        <a className={styles.attribution} href="https://www.flaticon.com/free-icons/taiwan" title="taiwan icons">
+          Taiwan icons created by Freepik - Flaticon
+        </a>
       </small>
     </div>
   )

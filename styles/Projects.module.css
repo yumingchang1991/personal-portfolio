@@ -1,0 +1,9 @@
+.projects-container {
+  margin-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

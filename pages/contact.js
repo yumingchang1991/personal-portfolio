@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import styles from '../styles/Contact.module.css'
 
@@ -7,7 +6,7 @@ const LINKEDIN = 'https://www.linkedin.com/in/yumingchang1991/'
 
 export default function Contact() {
   return (
-    <>
+    <div className={styles['contact-container']}>
       <h2>
         Thank you for your interest!
       </h2>
@@ -27,7 +26,7 @@ export default function Contact() {
         href='https://www.timeanddate.com/worldclock/converter.html?iso=20220608T080000&p1=241' target='_blank'>
         Time Zone Converter
       </a>
-    </>
+    </div>
   )
 }
 

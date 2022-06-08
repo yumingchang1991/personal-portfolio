@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .avatar-container {
@@ -65,7 +66,6 @@
 }
 
 .intro-summary {
-  line-height: 0.5rem;
   font-size: 1.2rem;
 }
 

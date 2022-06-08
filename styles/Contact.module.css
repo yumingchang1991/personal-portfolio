@@ -1,0 +1,41 @@
+.list-container {
+  list-style: none;
+}
+
+.list-item {
+  margin-block: 1rem;
+}
+
+.list-item::before {
+  content: "🌟 ";
+}
+
+.list-item:first-child::after,
+.list-item:last-child::after,
+.link::after,
+.link::before {
+  font-size: 1rem;
+  color: #252525;
+}
+
+.list-item:first-child::after {
+  content: " (click to copy) ";
+}
+
+.list-item:last-child::after,
+.link::after {
+  content: " (open in new tab) ";
+}
+
+.list-item:hover {
+  color: #e63333;
+  cursor: pointer;
+}
+
+.link::before {
+  content: "In case you need a ";
+}
+
+.link:hover {
+  color: #e63333;
+}

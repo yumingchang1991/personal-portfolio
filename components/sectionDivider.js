@@ -5,7 +5,7 @@ export default function SectionDivider({ displayText }) {
   const style = {
     alignSelf: 'stretch',
     margin: '1rem',
-    width: '80vw'
+    maxWidth: '100vw',
   }
   
   return (

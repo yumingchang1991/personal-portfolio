@@ -27,4 +27,6 @@ This portal integrates all my web projects into a React sinlge page application.
 | 6  | 2022-05-04 |   V    | **add JS30 challenge link** to navigation menu
 | 7  | 2022-06-03 |   V    | **migrate from simple React to NextJS**
 | 8  | 2022-06-07 |   V    | **add scroll to top button** with React Hook
-| 9  | 2022-06-12 |        | **add projects landing page**
+| 9  | 2022-06-07 |   V    | **add projects landing page**
+| 10 | 2022-06-08 |   V    | **add contact page** and **floating Avatar**
+| 11 | 2022-06-12 |        | **add project detail page**

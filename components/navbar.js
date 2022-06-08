@@ -96,7 +96,7 @@ export default function NavBar() {
                 <ListItemButton>
                   <ListItemText>
                     <Typography sx={listItemCSS}>
-                      About Me
+                      About
                     </Typography>
                   </ListItemText>
                 </ListItemButton>
@@ -114,8 +114,17 @@ export default function NavBar() {
               </Link>
             </ListItem>
             <ListItem onClick={handleDrawerClose}>
-
+              <Link href='/contact'>
+                <ListItemButton>
+                  <ListItemText>
+                    <Typography sx={listItemCSS}>
+                      Contact
+                    </Typography>
+                  </ListItemText>
+                </ListItemButton>
+              </Link>
             </ListItem>
+            <Divider />
             <ListItem onClick={handleDrawerClose}>
               <ListItemButton>
                 <a href={'https://yumingchang1991.github.io/JavaScript30/'} target='_blank'>

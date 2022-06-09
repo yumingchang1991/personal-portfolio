@@ -127,7 +127,18 @@ export default function NavBar() {
             <Divider />
             <ListItem onClick={handleDrawerClose}>
               <ListItemButton>
-                <a href={'https://yumingchang1991.github.io/JavaScript30/'} target='_blank'>
+                <a href={'https://yumingchang1991.medium.com/technical-article-structure-on-medium-954850e1ef4d'} target='_blank'>
+                  <ListItemText>
+                    <Typography sx={listItemCSS}>
+                      Blog
+                    </Typography>
+                  </ListItemText>
+                </a>
+              </ListItemButton>
+            </ListItem>
+            <ListItem onClick={handleDrawerClose}>
+              <ListItemButton>
+                <a href={'https://github.com/yumingchang1991/JavaScript30'} target='_blank'>
                   <ListItemText>
                     <Typography sx={listItemCSS}>
                       JS30 Challenge

@@ -2,14 +2,14 @@
  * for existing Module
  */
 import SiteLogoText from '../utility/SiteLogoText';
-
+import NavBarListItem from './navBarListItem';
+import NavBarListLinkExternal from './navBarListLinkExternal';
 /**
  * for App Bar
  */
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 
 /**
  * For Drawer
@@ -21,12 +21,6 @@ import Divider from '@mui/material/Divider'
 
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-
-// Next Link
-import Link from 'next/link'
 
 /**
  * Main Function
@@ -46,11 +40,8 @@ export default function NavBar() {
     padding: '1rem',
   }
   const drawerCSS = {
-    flexshrink: 0,
-  }
-
-  const listItemCSS = {
-    fontSize: '1.5rem'
+    flexgrow: 1,
+    minWidth: '100vw',
   }
 
   return (
@@ -58,7 +49,6 @@ export default function NavBar() {
       <AppBar position='fixed' open={open}>
         <Toolbar
           sx={toolBarCSS}>
-
           <SiteLogoText />
           <IconButton
             aria-label="open drawer"
@@ -69,7 +59,6 @@ export default function NavBar() {
             <MenuIcon
               fontSize='large'
               sx={{
-                // color: "#252525",
                 color: "#e6e6e6"
               }}
             />
@@ -81,6 +70,7 @@ export default function NavBar() {
       <SwipeableDrawer
         open={open}
         sx={drawerCSS}
+        PaperProps={{ sx: { minWidth: '300px' }}}
         anchor='right'
         onClose={handleDrawerClose}
         onOpen={handleDrawerOpen}
@@ -91,62 +81,17 @@ export default function NavBar() {
         <Divider />
         <nav aria-label='main navigation menu'>
           <List>
-            <ListItem onClick={handleDrawerClose}>
-              <Link href='/about'>
-                <ListItemButton>
-                  <ListItemText>
-                    <Typography sx={listItemCSS}>
-                      About
-                    </Typography>
-                  </ListItemText>
-                </ListItemButton>
-              </Link>
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-              <Link href='/projects'>
-                <ListItemButton>
-                  <ListItemText>
-                    <Typography sx={listItemCSS}>
-                      Projects
-                    </Typography>
-                  </ListItemText>
-                </ListItemButton>
-              </Link>
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-              <Link href='/contact'>
-                <ListItemButton>
-                  <ListItemText>
-                    <Typography sx={listItemCSS}>
-                      Contact
-                    </Typography>
-                  </ListItemText>
-                </ListItemButton>
-              </Link>
-            </ListItem>
+            <NavBarListItem targetLocation={'About'} eventHandler={handleDrawerClose} />
+            <NavBarListItem targetLocation={'Projects'} eventHandler={handleDrawerClose} />
+            <NavBarListItem targetLocation={'Contact'} eventHandler={handleDrawerClose} />
             <Divider />
-            <ListItem onClick={handleDrawerClose}>
-              <ListItemButton>
-                <a href={'https://yumingchang1991.medium.com/technical-article-structure-on-medium-954850e1ef4d'} target='_blank'>
-                  <ListItemText>
-                    <Typography sx={listItemCSS}>
-                      Blog
-                    </Typography>
-                  </ListItemText>
-                </a>
-              </ListItemButton>
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-              <ListItemButton>
-                <a href={'https://github.com/yumingchang1991/JavaScript30'} target='_blank'>
-                  <ListItemText>
-                    <Typography sx={listItemCSS}>
-                      JS30 Challenge
-                    </Typography>
-                  </ListItemText>
-                </a>
-              </ListItemButton>
-            </ListItem>
+            <NavBarListLinkExternal
+              targetLocation={'Blog'}
+              targetUrl={'https://yumingchang1991.medium.com/technical-article-structure-on-medium-954850e1ef4d'} eventHandler={handleDrawerClose} />
+            <NavBarListLinkExternal
+              targetLocation={'JS30'}
+              targetUrl={'https://github.com/yumingchang1991/JavaScript30'}
+              eventHandler={handleDrawerClose} />
           </List>
         </nav>
       </SwipeableDrawer>

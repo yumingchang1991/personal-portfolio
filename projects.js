@@ -1,20 +1,12 @@
 const projects = [
   {
     id: 0,
-    name: 'E-Commerce Site',
-    description: 'I replicated the E-Commerce site of my favorite gym outfit brand - Evolete Apparel, including catalog, shopping card, member login, promotion',
-    technologies: ['NextJS', 'ExpressJS', 'MongoDB Atlas'],
-    imgUrl: '',
-    link: ''
-  },
-  {
-    id: 1,
-    name: 'Random Quote API',
-    description: 'This API will give you a ramdon quote from my role models. Maybe one of them would give just enough courage/energy to you',
-    technologies: ['ExpressJS', 'RESTful', 'MongoDB Atlas'],
-    imgUrl: '',
-    link: ''
-  },
+    name: 'Expense Tracker',
+    description: 'Expense tracker with user management system implemented',
+    technologies: ['Express', 'Passport', 'Mongooose', 'Handlebars'],
+    imgUrl: 'thumbnails/ExpenseTracker.png',
+    link: 'https://dry-plateau-72468.herokuapp.com/users/login'
+  }
 ]
 
 module.exports = projects

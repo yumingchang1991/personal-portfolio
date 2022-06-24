@@ -5,7 +5,7 @@ import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ProjectCard({ name, description, technologies, link }) {
+export default function ProjectCard({ name, description, technologies, imgUrl, link }) {
   const technologyJSX = technologies
     .map(technology => (<Chip label={technology} />))
     .reduce((results, jsx) => {
@@ -16,24 +16,28 @@ export default function ProjectCard({ name, description, technologies, link }) {
     flexGrow: 1
   }
 
+  function onClickNavigation(e) {
+    window.open(link, '_blank')
+  }
+
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image=""
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {name}
-          </Typography>
-          {technologyJSX}
-          <Typography variant="body2" color="text.secondary">
-            {description}
-          </Typography>
-        </CardContent>
+      <CardActionArea onClick={onClickNavigation}>
+          <CardMedia
+            component="img"
+            height="140"
+            image={imgUrl}
+            alt="a screenshot of Expense Tracker"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {name}
+            </Typography>
+            {technologyJSX}
+            <Typography variant="body2" color="text.secondary">
+              {description}
+            </Typography>
+          </CardContent>
       </CardActionArea>
     </Card>
   );

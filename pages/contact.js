@@ -5,7 +5,7 @@ import Calendly from '../components/calendly';
 const EMAIL = 'yumingchang1991@gmail.com'
 const LINKEDIN = 'https://www.linkedin.com/in/yumingchang1991/'
 const calendly = {
-  eventUrl: "https://calendly.com/yumingchang1991/30mins-counseling",
+  eventUrl: "https://calendly.com/yumingchang1991/30-minute-career-networking-session",
   minWidth: '320px',
   height: '630px',
   overflowY: 'none'

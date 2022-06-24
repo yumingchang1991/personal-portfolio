@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <>
       <Typography sx={{ padding: '1rem' }}>
-        Projects (placeholder ...)
+        Projects
       </Typography>
       <Divider />
       <div className={styles['projects-container']}>

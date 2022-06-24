@@ -1,5 +1,8 @@
 .contact-container {
   padding-inline: 1rem;
+  min-width: 100vw;
+  text-align: center;
+  overflow-y: hidden;
 }
 
 .list-container {
@@ -14,8 +17,8 @@
   content: "🌟 ";
 }
 
-.list-item:first-child::after,
-.list-item:last-child::after,
+.list-item::after,
+.list-item::after,
 .link::after,
 .link::before {
   font-size: 1rem;
@@ -26,9 +29,13 @@
   content: " (click to copy) ";
 }
 
-.list-item:last-child::after,
+.list-item:nth-child(2)::after,
 .link::after {
   content: " (open in new tab) ";
+}
+
+.list-item:last-child::after {
+  content: " (through Calendly) ";
 }
 
 .list-item:hover {

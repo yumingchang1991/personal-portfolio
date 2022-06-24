@@ -1,13 +1,14 @@
+import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
 
-export default function ProjectCard({ name, description, technologies, imgUrl, link }) {
+export default function ProjectCard({ name, description, technologies, imgUrl, link, githubUrl, mediumUrl }) {
   const technologyJSX = technologies
-    .map(technology => (<Chip label={technology} />))
+    .map(technology => (<Chip label={technology} sx={{ margin: '0.2rem 0.2rem 0.2rem 0'}} />))
     .reduce((results, jsx) => {
       return [...results, jsx]
     }, [])
@@ -21,7 +22,7 @@ export default function ProjectCard({ name, description, technologies, imgUrl, l
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} variant='outlined'>
       <CardActionArea onClick={onClickNavigation}>
           <CardMedia
             component="img"
@@ -39,6 +40,11 @@ export default function ProjectCard({ name, description, technologies, imgUrl, l
             </Typography>
           </CardContent>
       </CardActionArea>
+      <CardActions>
+        <Button href={link} color="warning" target="_blank" rel="noreferrer">Demo</Button>
+        <Button href={githubUrl} color="warning" target="_blank" rel="noreferrer">GitHub</Button>
+        <Button href={mediumUrl} color="warning" target="_blank" rel="noreferrer">Medium</Button>
+      </CardActions>
     </Card>
   );
 }

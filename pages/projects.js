@@ -14,6 +14,8 @@ export default function Projects() {
           technologies={project.technologies}
           imgUrl={project.imgUrl}
           link={project.link}
+          githubUrl={project.githubUrl}
+          mediumUrl={project.mediumUrl}
         />
       )
     })
@@ -23,10 +25,6 @@ export default function Projects() {
 
   return (
     <>
-      <Typography sx={{ padding: '1rem' }}>
-        Projects
-      </Typography>
-      <Divider />
       <div className={styles['projects-container']}>
         {projectsJSX}
       </div>

@@ -5,7 +5,9 @@ const projects = [
     description: 'Expense tracker with user management system implemented',
     technologies: ['Express', 'Passport', 'Mongooose', 'Handlebars'],
     imgUrl: 'thumbnails/ExpenseTracker.png',
-    link: 'https://dry-plateau-72468.herokuapp.com/users/login'
+    link: 'https://dry-plateau-72468.herokuapp.com/users/login',
+    githubUrl: 'https://github.com/yumingchang1991/expense-tracker',
+    mediumUrl: 'https://yumingchang1991.medium.com/portfolio-sharing-expense-tracker-ce4c54c1a91d'
   }
 ]
 

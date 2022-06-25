@@ -8,12 +8,12 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Backend Developer Portfolio | Yu-Ming Chang</title>
+          <title>Backend Developer Portfolio, Yu-Ming Chang</title>
           <meta name="description"
             content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
           {/* open graph */}
           <meta name="og:title" 
-            content='Backend Developer Portfolio | Yu-Ming Chang' />
+            content='Backend Developer Portfolio, Yu-Ming Chang' />
           <meta name="og:description" 
             content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
           <meta name="og:type" content='website' />

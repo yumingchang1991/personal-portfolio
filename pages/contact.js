@@ -16,9 +16,8 @@ export default function Contact() {
   return (
     <div className={styles['contact-container']}>
       <h2>
-        Thank you for your interest!
+        Let's connect!
       </h2>
-      <Divider />
       <ul className={styles['list-container']}>
         <li className={styles['list-item']} onClick={copyEmailToClipboard}>
           <email>{EMAIL}</email>

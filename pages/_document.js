@@ -8,7 +8,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Backend Developer Portfolio by Yu-Ming Chang</title>
           <meta name="description"
             content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
           {/* open graph */}

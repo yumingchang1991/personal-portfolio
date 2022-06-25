@@ -8,17 +8,18 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>Backend Developer Portfolio by Yu-Ming Chang</title>
           <meta name="description"
-            content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
+            content="This is Yu-Ming's web backend portfolio as JavaScript Developer. You may find full-stack projects focusing on backend features. Also, if you would like to connect, you could just book a time with me in the same site" />
           {/* open graph */}
           <meta name="og:title" 
             content='Backend Developer Portfolio by Yu-Ming Chang' />
           <meta name="og:description" 
-            content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
+            content="This is Yu-Ming's web backend portfolio as JavaScript Developer. You may find full-stack projects focusing on backend features. Also, if you would like to connect, you could just book a time with me in the same site" />
           <meta name="og:type" content='profile' />
-          <meta name="og:image" content='favicon/favicon-192x192.png' />
+          <meta name="og:image" content='https://yumingchang1991.github.io/personal-portfolio/favicon/favicon-192x192.png' />
           <meta name="og:url" content='https://yumingchang1991.github.io/personal-portfolio/' />
-          <title>Backend Developer Portfolio by Yu-Ming Chang</title>
+          
           {/* google font */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

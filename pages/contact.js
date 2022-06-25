@@ -15,9 +15,9 @@ const calendly = {
 export default function Contact() {
   return (
     <div className={styles['contact-container']}>
-      <h2>
-        Let's connect!
-      </h2>
+      <h1>
+        Let's CONNECT!
+      </h1>
       <ul className={styles['list-container']}>
         <li className={styles['list-item']} onClick={copyEmailToClipboard}>
           <email>{EMAIL}</email>

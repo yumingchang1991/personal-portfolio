@@ -14,6 +14,12 @@ export default function About() {
   return (
     <div className={styles['about-me-content']}>
       <Head>
+        {/* open graph */}
+        <meta name="og:profile:first_name" content='Yu-Ming' />
+        <meta name="og:profile:last_name" content='Chang' />
+        <meta name="og:profile:username" content='yumingchang' />
+        <meta name="og:profile:gender" content='male' />
+        {/* fontawesome kit */}
         <script src="https://kit.fontawesome.com/c421560752.js" crossOrigin="anonymous"></script>
       </Head>
       <div className={styles['avatar-container']}>

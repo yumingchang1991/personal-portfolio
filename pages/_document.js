@@ -8,8 +8,18 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Developer Portfolio | Backend Portfolio | Yu-Ming Chang</title>
-          <meta name="description" content="This is Yu-Ming's online portfolio as JavaScript Developer" />
+          <title>Backend Developer Portfolio | Yu-Ming Chang</title>
+          <meta name="description"
+            content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
+          {/* open graph */}
+          <meta name="og:title" 
+            content='Backend Developer Portfolio | Yu-Ming Chang' />
+          <meta name="og:description" 
+            content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
+          <meta name="og:type" content='website' />
+          <meta name="og:image" content='favicon/favicon-192x192.png' />
+          <meta name="og:url" content='https://yumingchang1991.github.io/personal-portfolio/' />
+          {/* google font */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
@@ -17,6 +27,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+          {/* favicon */}
           <link rel="icon" href="favicon/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />

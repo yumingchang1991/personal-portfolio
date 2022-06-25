@@ -15,9 +15,10 @@ export default class MyDocument extends Document {
             content='Backend Developer Portfolio by Yu-Ming Chang' />
           <meta name="og:description" 
             content="This is Yu-Ming's web backend portfolio as JavaScript Developer" />
-          <meta name="og:type" content='website' />
+          <meta name="og:type" content='profile' />
           <meta name="og:image" content='favicon/favicon-192x192.png' />
           <meta name="og:url" content='https://yumingchang1991.github.io/personal-portfolio/' />
+          <title>Backend Developer Portfolio by Yu-Ming Chang</title>
           {/* google font */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

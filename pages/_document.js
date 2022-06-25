@@ -9,15 +9,15 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta name="description"
-            content="This is Yu-Ming's web backend portfolio as JavaScript Developer. You may find full-stack projects focusing on backend features. Also, if you would like to connect, you could just book a time with me in the same site" />
+            content="This portfolio includes full-stack projects focusing on backend features. Besides, if you would like to connect with me, you could just book a time in contact page" />
           <meta name="keywords" content="Backend, Developer, Portfolio, YuMing, Yu-Ming, Yu-Ming Chang" />
           {/* open graph */}
           <meta name="og:title" 
             content='Backend Developer Portfolio by Yu-Ming Chang' />
           <meta name="og:description" 
-            content="This is Yu-Ming's web backend portfolio as JavaScript Developer. You may find full-stack projects focusing on backend features. Also, if you would like to connect, you could just book a time with me in the same site" />
+            content="This portfolio includes full-stack projects focusing on backend features. Besides, if you would like to connect with me, you could just book a time in contact page" />
           <meta name="og:type" content='profile' />
-          <meta name="og:image" content='https://yumingchang1991.github.io/personal-portfolio/favicon/favicon-192x192.png' />
+          <meta name="og:image:url" content='https://images.pickapic.live/get/13b941d4-e9f0-9085-931a-7ed408652ae4-1656161151.png' />
           <meta name="og:url" content='https://yumingchang1991.github.io/personal-portfolio/' />
           
           {/* google font */}

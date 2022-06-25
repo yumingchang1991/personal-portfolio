@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import styles from '../styles/Projects.module.css'
@@ -25,6 +26,9 @@ export default function Projects() {
 
   return (
     <>
+      <Head>
+        <title>Backend Developer Portfolio by Yu-Ming Chang</title>
+      </Head>
       <div className={styles['projects-container']}>
         {projectsJSX}
       </div>

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Divider from '@mui/material/Divider';
 import styles from '../styles/Contact.module.css'
 import Calendly from '../components/calendly';
@@ -14,20 +15,25 @@ const calendly = {
 
 export default function Contact() {
   return (
-    <div className={styles['contact-container']}>
-      <h1>
-        Let's CONNECT!
-      </h1>
-      <ul className={styles['list-container']}>
-        <li className={styles['list-item']} onClick={copyEmailToClipboard}>
-          <email>{EMAIL}</email>
-        </li>
-        <li className={styles['list-item']} onClick={openInNewTab}>LinkedIn</li>
-        <li className={styles['list-item']} onClick={scrollToCalendly}>Book a time with me</li>
-      </ul>
-      <Divider />
-      <Calendly url={calendly.eventUrl} minWidth={calendly.minWidth} height={calendly.height} />
-    </div>
+    <>
+      <Head>
+        <title>Backend Developer Portfolio by Yu-Ming Chang</title>
+      </Head>
+      <div className={styles['contact-container']}>
+        <h1>
+          Let's CONNECT!
+        </h1>
+        <ul className={styles['list-container']}>
+          <li className={styles['list-item']} onClick={copyEmailToClipboard}>
+            <email>{EMAIL}</email>
+          </li>
+          <li className={styles['list-item']} onClick={openInNewTab}>LinkedIn</li>
+          <li className={styles['list-item']} onClick={scrollToCalendly}>Book a time with me</li>
+        </ul>
+        <Divider />
+        <Calendly url={calendly.eventUrl} minWidth={calendly.minWidth} height={calendly.height} />
+      </div>
+    </>
   )
 }
 

@@ -14,6 +14,7 @@ export default function About() {
   return (
     <div className={styles['about-me-content']}>
       <Head>
+        <title>Backend Developer Portfolio by Yu-Ming Chang</title>
         {/* open graph */}
         <meta name="og:profile:first_name" content='Yu-Ming' />
         <meta name="og:profile:last_name" content='Chang' />

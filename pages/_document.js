@@ -8,9 +8,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Backend Developer Portfolio by Yu-Ming Chang</title>
           <meta name="description"
             content="This is Yu-Ming's web backend portfolio as JavaScript Developer. You may find full-stack projects focusing on backend features. Also, if you would like to connect, you could just book a time with me in the same site" />
+          <meta name="keywords" content="Backend, Developer, Portfolio, YuMing, Yu-Ming, Yu-Ming Chang" />
           {/* open graph */}
           <meta name="og:title" 
             content='Backend Developer Portfolio by Yu-Ming Chang' />

@@ -1,4 +1,4 @@
-import Navbar from './navbar'
+import Navbar from './navBar'
 import FloatingButton from './floatingButton'
 import Avatar from './floatingAvatar'
 

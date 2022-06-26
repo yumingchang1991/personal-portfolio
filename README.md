@@ -29,4 +29,6 @@ This portal integrates all my web projects into a React sinlge page application.
 | 8  | 2022-06-07 |   V    | **add scroll to top button** with React Hook
 | 9  | 2022-06-07 |   V    | **add projects landing page**
 | 10 | 2022-06-08 |   V    | **add contact page** and **floating Avatar**
-| 11 | 2022-06-12 |        | **add project detail page**
+| 11 | 2022-06-24 |   V    | **add project sample**
+| 12 | 2022-06-26 |   V    | **add media queries to navigation bar**
+| 13 | 2022-07-03 |        | **add project detail page**

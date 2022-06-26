@@ -12,7 +12,7 @@ export default function NavBarListLinkExternal({ targetLocation, targetUrl, even
   return (
     <ListItem onClick={eventHandler}>
       <ListItemButton>
-        <a href={targetUrl} target='_blank'>
+        <a href={targetUrl} target='_blank' rel='noreferrer'>
           <ListItemText>
             <Typography sx={listItemCSS}>
               {toTitleCase(targetLocation)}

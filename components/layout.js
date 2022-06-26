@@ -1,11 +1,11 @@
-import Navbar from './navBar'
+import NavBar from './navBar'
 import FloatingButton from './floatingButton'
 import Avatar from './floatingAvatar'
 
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <main>{children}</main>
       <Avatar />
       <FloatingButton />

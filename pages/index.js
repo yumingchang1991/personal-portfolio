@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
         <title>Backend Developer Portfolio by Yu-Ming Chang</title>
       </Head>
 

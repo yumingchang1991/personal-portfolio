@@ -1,8 +1,23 @@
-.contact-container {
+.contact-container-grid {
   padding-inline: 1rem;
   min-width: 100vw;
-  text-align: center;
-  overflow-y: hidden;
+  text-align: left;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  gap: 2rem
+}
+
+.contact-container-flex {
+  padding-inline: 1rem;
+  min-width: 100vw;
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .list-container {
@@ -17,36 +32,7 @@
   content: "🌟 ";
 }
 
-.list-item::after,
-.list-item::after,
-.link::after,
-.link::before {
-  font-size: 1rem;
-  color: #252525;
-}
-
-.list-item:first-child::after {
-  content: " (click to copy) ";
-}
-
-.list-item:nth-child(2)::after,
-.link::after {
-  content: " (open in new tab) ";
-}
-
-.list-item:last-child::after {
-  content: " (through Calendly) ";
-}
-
 .list-item:hover {
   color: #e63333;
   cursor: pointer;
-}
-
-.link::before {
-  content: "In case you need a ";
-}
-
-.link:hover {
-  color: #e63333;
 }

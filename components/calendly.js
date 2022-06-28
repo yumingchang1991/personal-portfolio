@@ -1,6 +1,13 @@
 import { useEffect } from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-export default function Calendly ({ minWidth, height, url }) {
+export default function Calendly () {
+  const matches = useMediaQuery('(max-width: 728px)')
+  const eventUrl = "https://calendly.com/yumingchang1991/30-minute-career-networking-session"
+  const boxShadow = '-0.2rem 0.2rem 0.2rem #e6e6e6'
+  const minWidth = '340px'
+  const height = '650px'
+
   useEffect(() => {
     const head = document.querySelector('head');
     const script = document.createElement('script');
@@ -14,8 +21,8 @@ export default function Calendly ({ minWidth, height, url }) {
   return (
     <div
       className="calendly-inline-widget"
-      data-url={url}
-      style={{ minWidth, height }}
+      data-url={eventUrl}
+      style={{ minWidth, height, boxShadow: matches ? '' : boxShadow }}
     />
-  );
+  )
 };

@@ -1,37 +1,34 @@
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Head from 'next/head'
-import Divider from '@mui/material/Divider';
 import styles from '../styles/Contact.module.css'
 import Calendly from '../components/calendly';
 
 const EMAIL = 'yumingchang1991@gmail.com'
 const LINKEDIN = 'https://www.linkedin.com/in/yumingchang1991/'
-const calendly = {
-  eventUrl: "https://calendly.com/yumingchang1991/30-minute-career-networking-session",
-  minWidth: '320px',
-  height: '630px',
-  overflowY: 'none'
-}
 
 
 export default function Contact() {
+  const matches = useMediaQuery('(max-width: 728px)')
+  
   return (
     <>
       <Head>
         <title>Backend Developer Portfolio by Yu-Ming Chang</title>
       </Head>
-      <div className={styles['contact-container']}>
-        <h1>
-          Let's CONNECT!
-        </h1>
-        <ul className={styles['list-container']}>
-          <li className={styles['list-item']} onClick={copyEmailToClipboard}>
-            <email>{EMAIL}</email>
-          </li>
-          <li className={styles['list-item']} onClick={openInNewTab}>LinkedIn</li>
-          <li className={styles['list-item']} onClick={scrollToCalendly}>Book a time with me</li>
-        </ul>
-        <Divider />
-        <Calendly url={calendly.eventUrl} minWidth={calendly.minWidth} height={calendly.height} />
+      <div className={ matches ? styles['contact-container-flex'] : styles['contact-container-grid'] }>
+        <div>
+          <h2>
+            Let's CONNECT!
+          </h2>
+          <ul className={styles['list-container']}>
+            <li className={styles['list-item']} onClick={copyEmailToClipboard}>
+              <email>{EMAIL}</email>
+            </li>
+            <li className={styles['list-item']} onClick={openInNewTab}>LinkedIn</li>
+            <li className={styles['list-item']} onClick={scrollToCalendly}>Book a time with me</li>
+          </ul>
+        </div>
+        <Calendly />
       </div>
     </>
   )

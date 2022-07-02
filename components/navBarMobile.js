@@ -88,10 +88,6 @@ export default function NavBarMobile() {
             <NavBarListLinkExternal
               targetLocation={'Blog'}
               targetUrl={'https://yumingchang1991.medium.com/technical-article-structure-on-medium-954850e1ef4d'} eventHandler={handleDrawerClose} />
-            <NavBarListLinkExternal
-              targetLocation={'JS30'}
-              targetUrl={'https://github.com/yumingchang1991/JavaScript30'}
-              eventHandler={handleDrawerClose} />
           </List>
         </nav>
       </SwipeableDrawer>

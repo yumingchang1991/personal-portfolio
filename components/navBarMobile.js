@@ -81,10 +81,8 @@ export default function NavBarMobile() {
         <Divider />
         <nav aria-label='main navigation menu'>
           <List>
-            <NavBarListItem targetLocation={'About'} eventHandler={handleDrawerClose} />
             <NavBarListItem targetLocation={'Projects'} eventHandler={handleDrawerClose} />
             <NavBarListItem targetLocation={'Contact'} eventHandler={handleDrawerClose} />
-            <Divider />
             <NavBarListLinkExternal
               targetLocation={'Blog'}
               targetUrl={'https://yumingchang1991.medium.com/technical-article-structure-on-medium-954850e1ef4d'} eventHandler={handleDrawerClose} />

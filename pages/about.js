@@ -13,16 +13,6 @@ export default function About() {
 
   return (
     <div className={styles['about-me-content']}>
-      <Head>
-        <title>Backend Developer Portfolio by Yu-Ming Chang</title>
-        {/* open graph */}
-        <meta name="og:profile:first_name" content='Yu-Ming' />
-        <meta name="og:profile:last_name" content='Chang' />
-        <meta name="og:profile:username" content='yumingchang' />
-        <meta name="og:profile:gender" content='male' />
-        {/* fontawesome kit */}
-        <script src="https://kit.fontawesome.com/c421560752.js" crossOrigin="anonymous"></script>
-      </Head>
       <div className={styles['avatar-container']}>
         <img className={styles['avatar-img']} src='Avatar.png' width="188px" height="196px" alt="a picture of Yu-Ming"></img>
       </div>
@@ -46,13 +36,13 @@ export default function About() {
       </p>
       <SectionDivider displayText={sectionText.LANGUAGES}></SectionDivider>
       <p className={styles['intro-summary']}>
-        JavaScript - Intermediate
+        JavaScript
       </p>
       <p className={styles['intro-summary']}>
-        C - Introductory
+        C
       </p>
       <p className={styles['intro-summary']}>
-        VBA - Proficient
+        VBA
       </p>
       <SectionDivider displayText={sectionText.EXPERIENCE}></SectionDivider>
       <p className={styles['intro-summary']}>

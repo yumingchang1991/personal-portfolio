@@ -1,0 +1,19 @@
+.scroll-down {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 1s ease;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.scroll-down p {
+  font-weight: bold;
+}
+
+.scroll-down:hover {
+  transform: translateY(1rem);
+}

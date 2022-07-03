@@ -10,13 +10,7 @@ export default function Projects() {
     .map(project => {
       return (
         <ProjectCard
-          name={project.name}
-          description={project.description}
-          technologies={project.technologies}
-          imgUrl={project.imgUrl}
-          link={project.link}
-          githubUrl={project.githubUrl}
-          mediumUrl={project.mediumUrl}
+          project = { project }
         />
       )
     })

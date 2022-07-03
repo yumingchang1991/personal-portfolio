@@ -1,9 +1,9 @@
 import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Stack from '@mui/material/Stack'
-import { Typography, useMediaQuery } from '@mui/material'
+import { Typography, useMediaQuery, Link, Tooltip } from '@mui/material'
 
-export default function ProjectCard({ name, description, technologies, imgUrl, link, githubUrl, mediumUrl }) {
+export default function ProjectCard({ project }) {
   const matches = useMediaQuery('(max-Width: 800px)')
 
   const boxStyle = {
@@ -13,8 +13,15 @@ export default function ProjectCard({ name, description, technologies, imgUrl, l
     boxShadow: '0 4px 7px 5px #e6e6e6',
     transition: 'all 0.5s ease',
     textAlign: 'center',
+    'img': {
+      transition: 'all 0.7s ease',
+      borderRadius: '0.3rem'
+    },
     '&:hover': {
-      transform: 'scale(1.01)'
+      transform: 'scale(1.01)',
+      'img': {
+        transform: 'scale(0.97)'
+      }
     }
   }
 
@@ -24,8 +31,18 @@ export default function ProjectCard({ name, description, technologies, imgUrl, l
     fontSize: '2rem'
   }
 
+  const descriptionStyle = {
+    fontFamily: "Roboto"
+  }
+
+  const footerStyle = {
+    textAlign: 'left',
+    fontFamily: 'Roboto Mono, monospace, Monaco, Courier',
+    fontSize: '0.7rem'
+  }
+
   function onClickToDemoSite(e) {
-    window.open(link, '_blank')
+    window.open(project.link, '_blank')
   }
 
   return (
@@ -33,18 +50,25 @@ export default function ProjectCard({ name, description, technologies, imgUrl, l
       <Paper elevation={0} sx={{ width: '80vw', maxHeight: '70vh', backgroundColor: 'transparent' }}>
         <Box>
           <Stack justifyContent='space-between' alignItems='flex-start' maxHeight='70vh' maxWidth='100%' spacing={2}>
-            <Stack direction={matches ? 'column-reverse' : 'row'} spacing={2} justifyContent='space-between' alignItems='center' onClick={onClickToDemoSite} sx={{'&:hover': {cursor: 'pointer'}}}>
-              <div>
-                <Typography color={titleStyle}>{name}</Typography>
-                <Typography>{description}</Typography>
-              </div>
-              <img
-                src={imgUrl} width={'40%'}>
-              </img>
-            </Stack>
+            <Tooltip title="click to open demo in new tab" followCursor placement='right-end'>
+              <Stack direction={matches ? 'column-reverse' : 'row'} spacing={2} justifyContent='space-between' alignItems='center' onClick={onClickToDemoSite} sx={{'&:hover': {cursor: 'pointer'}}}>
+                <div>
+                  <Typography sx={titleStyle}>{project.name}</Typography>
+                  <Typography sx={descriptionStyle}>{project.description}</Typography>
+                </div>
+                <Box sx={{ maxWidth: '40%', padding: 0 }}>
+                  <img
+                    src={project.imgUrl} width={'100%'}>
+                  </img>
+                </Box>
+              </Stack>
+            </Tooltip>
             <div>
-              <Typography sx={{ textAlign: 'left', fontFamily: 'Courier' }}>JavaScript</Typography>
-              <Typography sx={{ textAlign: 'left', fontFamily: 'Courier' }}>{technologies}</Typography>
+              <Typography sx={ footerStyle }>{ project.language }</Typography>
+              <Typography sx={ footerStyle }>{ project.technologies }</Typography>
+              <Link href='https://github.com/yumingchang1991/expense-tracker'>
+                <Typography sx={ footerStyle }>GitHub & Readme</Typography>
+              </Link>
             </div>
           </Stack>
         </Box>

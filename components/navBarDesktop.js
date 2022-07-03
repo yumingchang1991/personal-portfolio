@@ -17,6 +17,7 @@ export default function NavBarDekstop () {
   }
 
   const buttonCSS = {
+    marginInline: '1rem',
     color: '#e6e6e6',
     '&:hover': {
       color: '#e63333'

@@ -20,7 +20,7 @@ export default function About() {
           Yu-Ming, Chang
         </p>
         <div className={styles.location}>
-          <img className={styles['taiwan-flag']} src='taiwan.png'></img>
+          <img className={styles['taiwan-flag']} src='https://yumingchang1991.github.io/taiwan.png'></img>
           <span>
             Taipei, Taiwan
           </span>

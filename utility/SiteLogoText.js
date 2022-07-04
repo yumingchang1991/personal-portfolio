@@ -13,7 +13,7 @@ export default function SiteLogoText() {
   return (
     <>
       <div className='site-logo' >
-        <Link href='/personal-portfolio'>
+        <Link href='/'>
           <a className='site-logo-text'>
             <Typography sx={style}>
               Yu-Ming Chang

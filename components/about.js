@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div className={styles['about-me-content']}>
       <div className={styles['avatar-container']}>
-        <img className={styles['avatar-img']} src='./Avatar.png' width="188px" height="196px" alt="a picture of Yu-Ming"></img>
+        <img className={styles['avatar-img']} src='https://yumingchang1991.github.io/personal-portfolio/Avatar.png' width="188px" height="196px" alt="a picture of Yu-Ming"></img>
       </div>
       <section className={styles.intro}>
         <p className={styles['developer-name']}>

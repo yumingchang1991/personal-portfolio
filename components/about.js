@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/About.module.css'
-import SectionDivider from '../components/sectionDivider'
+import SectionDivider from './sectionDivider'
 
 export default function About() {
   const sectionText = {

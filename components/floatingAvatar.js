@@ -55,7 +55,7 @@ export default function FloatingAvatar() {
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
         variant="dot"
       >
-        <Avatar alt="Yu-Ming's Avatar" src="./Avatar.png" sx={avatarSx} />
+        <Avatar alt="Yu-Ming's Avatar" src="./ProfileSmall.png" sx={avatarSx} />
       </StyledBadge>
       </Link>
     </>

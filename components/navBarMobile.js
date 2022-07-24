@@ -1,7 +1,7 @@
 /**
  * for existing Module
  */
-import SiteLogoText from '../utility/SiteLogoText';
+import SiteLogoText from './SiteLogoText';
 import NavBarListItem from './navBarListItem';
 import NavBarListLinkExternal from './navBarListLinkExternal';
 /**

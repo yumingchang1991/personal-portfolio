@@ -4,7 +4,7 @@ import Chip from '@mui/material/Chip';
 export default function SectionDivider({ displayText }) {
   const style = {
     alignSelf: 'stretch',
-    margin: '1rem',
+    marginBlock: '1rem',
     maxWidth: '100vw',
   }
   

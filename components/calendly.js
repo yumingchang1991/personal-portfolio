@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import { useEffect } from 'react'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function Calendly () {
   const matches = useMediaQuery('(max-width: 728px)')

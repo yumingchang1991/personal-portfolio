@@ -5,7 +5,7 @@ import Button from '@mui/material/Button'
 import ButtonGroup from '@mui/material/ButtonGroup'
 import Tooltip from '@mui/material/Tooltip'
 
-import SiteLogoText from '../utility/SiteLogoText'
+import SiteLogoText from './SiteLogoText'
 
 
 

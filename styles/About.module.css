@@ -1,5 +1,4 @@
-.about-me-content {
-  /* Layout */
+.about-me-layout-mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,83 +6,94 @@
   margin-bottom: 1.5rem;
 }
 
-.avatar-container {
+.about-me-layout-desktop {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.more {
   /* Layout */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  /* Box Model */
-  margin-inline: auto;
-  padding-block: 1rem;
-  /* border-bottom: 2px dotted #E7EBEC; */
-}
-
-.social-media-links {
-  /* Layout */
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 1.5rem;
   padding-inline: 0px;
 }
 
 .link-item {
   list-style: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.1s ease;
 }
 
-.link i:hover {
-  color: #E63333;
+.link-item p {
+  margin-left: 2rem;
 }
 
-.intro {
-  /* Layout */
+.link-item:hover {
+  color: #afc4e5;
+  cursor: pointer;
+  transform: translateX(0.5rem);
+}
+
+.profile-information-section {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* other */
-  line-height: 0.5rem;
-  font-size: 1.2rem;
-  text-align: center;
+  justify-content: space-between;
 }
 
-.developer-name {
+.developer-name-mobile {
+  padding-bottom: 1rem;
+  text-align: center;
   font-size: 1.6rem;
   font-weight: bold;
   font-family: "Gloria Hallelujah";
 }
 
-.location {
+.developer-name-desktop {
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Gloria Hallelujah";
+}
+
+.location-mobile {
+  margin-left: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem
+  gap: 1rem;
+  margin-block: 0.5rem;
+}
+
+.location-desktop {
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 0.5rem;
 }
 
 .taiwan-flag {
   display: inline;
   width: 30px;
-  height: auto;
 }
 
-.intro-summary {
-  font-size: 1.2rem;
+.intro-summary-mobile {
+  font-size: 1rem;
+  text-align: center;
 }
 
-.attribution {
-  font-size: 0.6rem;
-  color: #363636;
-}
-
-@media (max-width: 800px) {
-  .avartar-img {
-    max-width: 210px;
-    height: auto;
-  }
-}
-
-@media (max-width: 1100px) {
-  .avartar-img {
-    max-width: 100%;
-    height: 180px;
-  }
+.intro-summary-desktop {
+  font-size: 1rem;
 }

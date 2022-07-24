@@ -14,7 +14,6 @@ export default function Home() {
         <meta name="og:profile:gender" content='male' />
         {/* fontawesome kit */}
         <title>Backend Developer Portfolio by Yu-Ming Chang</title>
-        <script src="https://kit.fontawesome.com/c421560752.js" crossOrigin="anonymous"></script>
       </Head>
 
       <div id='home-container' className={styles.container}>

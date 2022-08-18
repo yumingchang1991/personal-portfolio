@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
 import styles from '../styles/Projects.module.css'
 import ProjectCard from '../components/projectCard'
 import projects from '../projects'

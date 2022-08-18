@@ -1,10 +1,10 @@
-import Typography from '@mui/material/Typography';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import Typography from '@mui/material/Typography'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemText from '@mui/material/ListItemText'
 import Link from 'next/link'
 
-import toTitleCase from '../utility/toTitleCase';
+import toTitleCase from '../../utility/toTitleCase'
 
 export default function NavBarListItem({ targetLocation, eventHandler }) {
   const listItemCSS = {

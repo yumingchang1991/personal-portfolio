@@ -1,5 +1,5 @@
 import styles from '../styles/About.module.css'
-import SectionDivider from './sectionDivider'
+import SectionDivider from './subcomponents/sectionDivider'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import Link from 'next/link'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'

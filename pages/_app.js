@@ -1,11 +1,5 @@
 import '../styles/globals.css'
 
-// function MyApp({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
-
-// export default MyApp
-
 import React from 'react';
 import { CacheProvider } from '@emotion/react';
 import { ThemeProvider, CssBaseline } from '@mui/material';

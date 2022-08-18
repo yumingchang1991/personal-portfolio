@@ -2,19 +2,20 @@
 [Personal Portfolio](https://yumingchang1991.github.io/personal-portfolio/)
 
 ## Description
-This portal integrates all my web projects into a React sinlge page application.
+This portal integrates all my web projects into a multi-page NEXT/React application.
 
 ## Technology
+- **Next** V12
 - **React** V17: functional component
 - **React-Router** V6: hashrouter
-- **MUI** for dropdown
-- Pure CSS for the rest style
+- **MUI** for navigation & projects
+- **3rd Party Component from Calendly** in contact page
 
 ## Site Hierarchy
 - Home
-  - Who
-  - Backend Projects
-  - Frontend Projects
+  - Projects
+  - Contact
+  - Blog
 
 ## Roadmap
 |#   |Target Date | Status | Item 
@@ -30,5 +31,8 @@ This portal integrates all my web projects into a React sinlge page application.
 | 9  | 2022-06-07 |   V    | **add projects landing page**
 | 10 | 2022-06-08 |   V    | **add contact page** and **floating Avatar**
 | 11 | 2022-06-24 |   V    | **add project sample**
-| 12 | 2022-06-26 |   V    | **add media queries to navigation bar**
-| 13 | 2022-07-03 |        | **add project detail page**
+| 12 | 2022-06-26 |   V    | **add RWD to navigation bar**
+| 13 | 2022-07-02 |   V    | **add RWD to projects page**
+| 14 | 2022-07-24 |   V    | **add RWD to home page**
+| 15 | 2022-08-18 |   V    | **add Simple Twitter & ETF Tracker to Projects**
+| 16 | 2022-08-18 |   V    | **Refactor components**

@@ -32,7 +32,9 @@ export default function ProjectCard({ project }) {
   }
 
   const descriptionStyle = {
-    fontFamily: "Roboto"
+    fontFamily: "Roboto",
+    textAlign: 'justify',
+    paddingInline: '1.5rem'
   }
 
   const footerStyle = {
@@ -58,7 +60,7 @@ export default function ProjectCard({ project }) {
                 </div>
                 <Box sx={{ maxWidth: '40%', padding: 0 }}>
                   <img
-                    src={project.imgUrl} width={'100%'}>
+                    src={project.imgUrl} width={'100%'} alt={`This a project thumbnail of ${project.name}`}>
                   </img>
                 </Box>
               </Stack>
@@ -66,8 +68,11 @@ export default function ProjectCard({ project }) {
             <div>
               <Typography sx={ footerStyle }>{ project.language }</Typography>
               <Typography sx={ footerStyle }>{ project.technologies }</Typography>
-              <Link href='https://github.com/yumingchang1991/expense-tracker'>
-                <Typography sx={ footerStyle }>GitHub & Readme</Typography>
+              <Link href={project.githubUrl}>
+                <Typography sx={ footerStyle }>GitHub + Readme</Typography>
+              </Link>
+              <Link href={project.mediumUrl}>
+                <Typography sx={footerStyle}>Medium</Typography>
               </Link>
             </div>
           </Stack>

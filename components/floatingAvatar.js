@@ -1,7 +1,8 @@
-import { styled } from '@mui/material/styles';
-import Badge from '@mui/material/Badge';
-import Avatar from '@mui/material/Avatar';
+import { styled } from '@mui/material/styles'
+import Badge from '@mui/material/Badge'
+import Avatar from '@mui/material/Avatar'
 import Link from 'next/link'
+import Typography from '@mui/material/Typography'
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {

@@ -6,7 +6,6 @@ import Calendly from '../components/calendly';
 const EMAIL = 'yumingchang1991@gmail.com'
 const LINKEDIN = 'https://www.linkedin.com/in/yumingchang1991/'
 
-
 export default function Contact() {
   const matches = useMediaQuery('(max-width: 728px)')
   

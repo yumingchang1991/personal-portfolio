@@ -5,7 +5,7 @@ const projects = [
     description: 'This application tracks US ETFs as a holistic investment portfolio.',
     language: '#TypeScript',
     technologies: 'Express TypeScript + React TypeScript + AWS EC2 + AWS CodePipeline',
-    imgUrl: 'https://via.placeholder.com/350/252525/e6e6e6/png?text=Work+in+Progress',
+    imgUrl: 'thumbnails/ETF-Tracker.png',
     link: 'https://yumingchang1991.github.io/proxy-frontend/',
     githubUrl: 'https://github.com/yumingchang1991/proxy-backend',
     mediumUrl: 'https://blog.devgenius.io/3-steps-to-deploy-typescript-to-aws-elastic-beanstalk-with-continuous-delivery-611bc7ecf15c?source=user_profile---------3----------------------------&gi=4482b0ccd19e'

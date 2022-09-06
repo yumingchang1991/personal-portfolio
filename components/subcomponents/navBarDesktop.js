@@ -41,13 +41,11 @@ export default function NavBarDekstop () {
                   Contact
               </Button>
             </Link>
-            <Tooltip title='new tab' arrow>
-              <a href='https://yumingchang1991.medium.com/technical-article-structure-on-medium-954850e1ef4d' target='_blank' rel='noreferrer'>
-                <Button sx={buttonCSS}>
-                  Blog
-                </Button>
-              </a>
-            </Tooltip>
+            <Link href='https://yumingchang1991.medium.com/technical-article-structure-on-medium-954850e1ef4d' target='_blank' rel='noreferrer'>
+              <Button sx={buttonCSS}>
+                Medium
+              </Button>
+            </Link>
           </ButtonGroup>
         </Toolbar>
       </AppBar>

@@ -45,7 +45,6 @@ function copyEmailToClipboard() {
 
 function scrollToCalendly() {
   const list = document.querySelector('ul')
-  console.log(list.offsetHeight)
   const coordinate = {
     top: list.offsetHeight,
     behavior: 'smooth'

@@ -4,18 +4,18 @@ const projects = [
     name: 'ETF Portfolio Tracker',
     description: 'This application tracks US ETFs as a holistic investment portfolio.',
     language: '#TypeScript',
-    technologies: 'Express TypeScript + React TypeScript + AWS EC2 + AWS CodePipeline',
+    technologies: 'Express + MongoDB + React + MUI + AWS EC2 + AWS CodePipeline',
     imgUrl: 'thumbnails/ETF-Tracker.png',
     link: 'https://yumingchang1991.github.io/proxy-frontend/',
     githubUrl: 'https://github.com/yumingchang1991/proxy-backend',
-    mediumUrl: 'https://blog.devgenius.io/3-steps-to-deploy-typescript-to-aws-elastic-beanstalk-with-continuous-delivery-611bc7ecf15c?source=user_profile---------3----------------------------&gi=4482b0ccd19e'
+    mediumUrl: 'https://blog.devgenius.io/portfolio-sharing-etf-tracker-proxy-server-afcc89508dea'
   },
   {
     id: 2,
-    name: 'Simple Twitter',
-    description: 'This project reproduced simple features of Twitter. It was a joint development with a team of three, in which I assumed multiple roles including Progam Manager, Scrum Master, Developer, and Site Reliability Engineer. This website is currently available in Mandarin only.',
+    name: 'Twitter Replicates',
+    description: 'This project replicates basic features of Twitter. It was a joint development with a team of three, in which I assumed multiple roles including Progam Manager, Scrum Master, Developer, and Site Reliability Engineer. This website is currently available in Mandarin only.',
     language: '#JavaScript',
-    technologies: 'Express + MS SQL + Heroku',
+    technologies: 'Express + MySQL + Heroku',
     imgUrl: 'thumbnails/Twitter-Simple.png',
     link: 'https://shielded-springs-90732.herokuapp.com/signin',
     githubUrl: 'https://github.com/yumingchang1991/ac-twitter-fullstack-2022',

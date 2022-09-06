@@ -1,19 +1,68 @@
-.scroll-down {
-  padding-top: 3rem;
+.call-to-actions {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: all 1s ease;
-  opacity: 0.6;
-  cursor: pointer;
+  flex-direction: row;
 }
 
-.scroll-down p {
+.arrow-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 2s infinite movedown alternate;
+}
+
+.arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 2s infinite moveright alternate;
+}
+
+.action-to-profile,
+.action-to-project {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: middle;
+  transition: all 1s ease;
+  cursor: pointer;
+  color: gray;
+}
+
+.action-to-profile p,
+.action-to-project p {
   font-weight: bold;
 }
 
-.scroll-down:hover {
-  transform: translateY(1rem);
+.action-to-profile:hover {
+  transform: translate(-0.5rem, 1rem);
+  color: white;
+  background-color: #252525;
+}
+
+.action-to-project:hover {
+  transform: translate(1rem);
+  color: #E63333;
+  background-color: #E6E6E6;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-0.3rem)
+  }
+
+  100% {
+    transform: translateY(0.3rem)
+  }
+}
+
+@keyframes moveright {
+  40% {
+    transform: translateX(0.3rem)
+  }
+
+  75% {
+    transform: translateX(0)
+  }
 }
